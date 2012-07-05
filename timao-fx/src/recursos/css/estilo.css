@@ -1,0 +1,17 @@
+.root {
+	-fx-font-size: 12pt;
+	-fx-font-family: "Arial BLack";
+	-fx-base: black;
+	-fx-background: white;
+	-fx-focus-color: red;
+}
+.txtInfo {
+	-fx-fill: white;
+	-fx-text-alignment: center;
+	-fx-font-weight: bold;
+	-fx-font-size: 22pt;
+	-fx-font-family: "Courier News";
+}
+.list-cell {
+	-fx-background: red;
+}
