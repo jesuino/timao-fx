@@ -51,13 +51,13 @@ public class Principal extends Application {
 	private final String ARQUIVO_CSS = getClass().getResource(
 			"/recursos/css/estilo.css").toString();
 
-	private final String[] TITULOS = { "Copa do Mundo de Clubes da FIFA (1)",
+	private final String[] TITULOS = { "Copa do Mundo de Clubes da FIFA (2)",
 			"Campeonato Brasileiro (5)", "Copa do Brasil (3)",
-			"Supercopa do Brasil (1)", "Campeonato Brasileiro - Série B (1)",
-			"Torneio Rio-São Paulo (5)", "Campeonato Paulista (26)",
-			"Libertadores da América (?) SERÁ HOJE???" };
+			"Supercopa do Brasil (1)", "Campeonato Brasileiro - Sï¿½rie B (1)",
+			"Torneio Rio-Sï¿½o Paulo (5)", "Campeonato Paulista (26)",
+			"Libertadores da Amï¿½rica (?) SERï¿½ HOJE???" };
 
-	private final String INFO = "O Sport Club Corinthians Paulista foi fundado em 1º de setembro de 1910. A equipe é a maior campeã da história do Campeonato Paulista, com 26 taças.";
+	private final String INFO = "O Sport Club Corinthians Paulista foi fundado em 1ï¿½ de setembro de 1910. A equipe ï¿½ a maior campeï¿½ da histï¿½ria do Campeonato Paulista, com 26 taï¿½as.";
 
 	public static void main(String[] args) {
 		launch();
@@ -70,10 +70,10 @@ public class Principal extends Application {
 
 		Accordion paineis = new Accordion();
 		paineis.getPanes().addAll(
-				new TitledPane("Informações Gerais", fazerPainelInfo()),
+				new TitledPane("Informaï¿½ï¿½es Gerais", fazerPainelInfo()),
 				new TitledPane("Videos", fazerPainelVideos()),
 				new TitledPane("Hinos", fazerPainelHinos()),
-				new TitledPane("Títulos", fazerPainelTitulos()));
+				new TitledPane("Tï¿½tulos", fazerPainelTitulos()));
 		paineis.setExpandedPane(paineis.getPanes().get(0));
 		raiz.setTop(fazerTitulo());
 		BorderPane.setMargin(raiz.getTop(), new Insets(20));
@@ -81,7 +81,7 @@ public class Principal extends Application {
 		cena.getStylesheets().add(ARQUIVO_CSS);
 		cena.setFill(Color.BLACK);
 		palco.setScene(cena);
-		palco.setTitle("É Hoje, Vai Timão!!!!");
+		palco.setTitle("ï¿½ Hoje, Vai Timï¿½o!!!!");
 		palco.setResizable(false);
 		palco.show();
 	}
@@ -123,9 +123,9 @@ public class Principal extends Application {
 				.translateY(90).hgap(20).vgap(30).build();
 		pnlHinos.add(new Text("Hino Original"), 0, 0);
 		pnlHinos.add(new TocadorAudio(AUDIO_HINO), 1, 0);
-		pnlHinos.add(new Text("Hino Versão Rock"), 0, 1);
+		pnlHinos.add(new Text("Hino Versï¿½o Rock"), 0, 1);
 		pnlHinos.add(new TocadorAudio(AUDIO_HINO_ROCK), 1, 1);
-		pnlHinos.add(new Text("Hino Gaviões da Fiel"), 0, 2);
+		pnlHinos.add(new Text("Hino Gaviï¿½es da Fiel"), 0, 2);
 		pnlHinos.add(new TocadorAudio(AUDIO_HINO_GAVIOES), 1, 2);
 		return pnlHinos;
 	}
