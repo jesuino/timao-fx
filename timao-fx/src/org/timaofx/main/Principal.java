@@ -54,8 +54,13 @@ public class Principal extends Application {
 	private final String[] TITULOS = { "Copa do Mundo de Clubes da FIFA (2)",
 			"Campeonato Brasileiro (5)", "Copa do Brasil (3)",
 			"Supercopa do Brasil (1)", "Campeonato Brasileiro - S�rie B (1)",
+<<<<<<< HEAD
 			"Torneio Rio-S�o Paulo (5)", "Campeonato Paulista (26)",
 			"Libertadores da Am�rica (?) SER� HOJE???" };
+=======
+			"Torneio Rio-S�o Paulo (5)", "Campeonato Paulista (27)",
+			"Libertadores da Am�rica (1)", "Recopa sul-americana(1)"};
+>>>>>>> 8266fa3f548fe072a2f32951a20d99132165f5b9
 
 	private final String INFO = "O Sport Club Corinthians Paulista foi fundado em 1� de setembro de 1910. A equipe � a maior campe� da hist�ria do Campeonato Paulista, com 26 ta�as.";
 
